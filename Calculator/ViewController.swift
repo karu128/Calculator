@@ -1,0 +1,53 @@
+//
+//  ViewController.swift
+//  Calculator
+//
+//  Created by 畠山　ひかる on 2015/06/14.
+//  Copyright (c) 2015年 Hikaru Hatakeyama. All rights reserved.
+//
+
+import UIKit
+
+class ViewController: UIViewController {
+    @IBOutlet var label: UILabel!
+    
+    
+    var number:Int  = 0
+    var number2:Int = 0
+    var operation:Int = 0
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        // Do any additional setup after loading the view, typically from a nib.
+    }
+
+    @IBAction func select3() {
+          number = number*10+3
+          label.text = String(number)
+    }
+        @IBAction func select4() {
+            number = number*10+4
+            label.text = String(number)
+    }
+    @IBAction func plus (){
+        //plusボタンを押した時、labelには0が表示される
+        label.text = String(0)
+        
+        operation = 1
+        number2 = number
+        number = 0
+    }
+    
+    @IBAction func equal() {
+        if operation == 1 {
+            label.text = String(number + number2)
+        }
+    }
+     override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
+    }
+
+
+}
+
