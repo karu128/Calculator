@@ -20,15 +20,53 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     }
-
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
+    }
+    
+        
+    @IBAction func select1 (){
+        number = number*10+1
+        label.text = String (number)
+    }
+    
+    @IBAction func select2 () {
+        number = number*10+2
+        label.text = String (number)
+    }
     @IBAction func select3() {
-          number = number*10+3
-          label.text = String(number)
+        number = number*10+3
+        label.text = String(number)
     }
-        @IBAction func select4() {
-            number = number*10+4
-            label.text = String(number)
+    @IBAction func select4() {
+        number = number*10+4
+        label.text = String(number)
     }
+    @IBAction func select5 () {
+        number = number*10+5
+        label.text = String(number)
+    }
+    @IBAction func select6 (){
+        number = number*10+6
+        label.text = String (number)
+    }
+    
+    @IBAction func select7 (){
+        number = number*10+7
+        label.text = String(number)
+    }
+    
+    @IBAction func select8 () {
+        number = number*10+8
+        label.text = String(number)
+    }
+    
+    @IBAction func select9 (){
+        number = number*10+9
+        label.text = String(number)
+    }
+    
     @IBAction func plus (){
         //plusボタンを押した時、labelには0が表示される
         label.text = String(0)
@@ -37,17 +75,58 @@ class ViewController: UIViewController {
         number2 = number
         number = 0
     }
+    @IBAction func minus() {
+        label.text = String ("-")
+        
+        operation = 2
+        number2 = number
+        number = 0
+        
+    }
     
-    @IBAction func equal() {
+    @IBAction func multiplication() {
+        label.text = String ("×")
+        
+        operation = 3
+        number2 = number
+        number = 0
+        
+    }
+    
+    @IBAction func devide () {
+        label.text = String ("÷")
+        
+        operation = 4
+        number2 = number
+        number = 0
+    }
+    
+    @IBAction func equal () {
         if operation == 1 {
-            label.text = String(number + number2)
+            label.text = String (number + number2)
+            number = number + number2
+        }else if operation == 2{
+            label.text = String (number2 - number)
+            number = number2 - number
+        }else if operation == 3{
+            label.text = String (number * number2)
+            number = number*number2
+        }else if operation == 4{
+            label.text = String (number2 / number)
+            number = number2/number
+            
+            
         }
     }
-     override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+
+    
+    @IBAction func clear () {
+        label.text = String(0)
+        number = number2
+        number = 0
+        
+        
+        
     }
-
-
 }
 

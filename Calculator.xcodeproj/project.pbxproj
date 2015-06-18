@@ -13,6 +13,7 @@
 		17A8248D1B2D619400F32397 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 17A8248C1B2D619400F32397 /* Images.xcassets */; };
 		17A824901B2D619400F32397 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 17A8248E1B2D619400F32397 /* LaunchScreen.xib */; };
 		17A8249C1B2D619400F32397 /* CalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17A8249B1B2D619400F32397 /* CalculatorTests.swift */; };
+		17A825041B32CB3900F32397 /* block background.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 17A825031B32CB3900F32397 /* block background.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		17A824951B2D619400F32397 /* CalculatorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CalculatorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		17A8249A1B2D619400F32397 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		17A8249B1B2D619400F32397 /* CalculatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorTests.swift; sourceTree = "<group>"; };
+		17A825031B32CB3900F32397 /* block background.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "block background.jpg"; path = "../../../Downloads/block background.jpg"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +79,7 @@
 		17A824821B2D619400F32397 /* Calculator */ = {
 			isa = PBXGroup;
 			children = (
+				17A825031B32CB3900F32397 /* block background.jpg */,
 				17A824851B2D619400F32397 /* AppDelegate.swift */,
 				17A824871B2D619400F32397 /* ViewController.swift */,
 				17A824891B2D619400F32397 /* Main.storyboard */,
@@ -194,6 +197,7 @@
 			files = (
 				17A8248B1B2D619400F32397 /* Main.storyboard in Resources */,
 				17A824901B2D619400F32397 /* LaunchScreen.xib in Resources */,
+				17A825041B32CB3900F32397 /* block background.jpg in Resources */,
 				17A8248D1B2D619400F32397 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -409,6 +413,7 @@
 				17A824A11B2D619400F32397 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		17A824A21B2D619400F32397 /* Build configuration list for PBXNativeTarget "CalculatorTests" */ = {
 			isa = XCConfigurationList;
@@ -417,6 +422,7 @@
 				17A824A41B2D619400F32397 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
